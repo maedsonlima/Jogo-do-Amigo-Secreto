@@ -70,5 +70,33 @@ Adiciona esse novo `<li>` dentro da lista `<ul>`, fazendo com que o nome apareç
 
 ---
 
-Com isso, conseguimos exibir a lista de amigos de forma dinâmica no site! 🎉
+#CÓDIGO COMPLETO
+```js
+let ListaDeAmigos = [];
+
+function adicionarAmigo() {
+    let nomeAmigo = document.getElementById('amigo').value.trim(); // Obtém o valor do input e remove espaços extras
+
+    if (nomeAmigo !== "") { // Verifica se o campo não está vazio
+        ListaDeAmigos.push(nomeAmigo); // Adiciona o nome ao array
+        atualizarLista(); // Atualiza a lista de amigos na tela
+        document.getElementById('amigo').value = ""; // Limpa o campo de entrada
+    } else {
+        console.log("Por favor, digite um nome válido!"); // Se o campo estiver vazio, exibe um alerta no console
+    }
+
+    console.log(ListaDeAmigos); // Exibe a lista no console para conferência
+}
+
+function atualizarLista() {
+    let listaHTML = document.getElementById("listaDeAmigosNaTela"); // Obtém o elemento <ul> pelo ID
+    listaHTML.innerHTML = ""; // Limpa a lista antes de adicionar novos itens
+
+    for (let i = 0; i < ListaDeAmigos.length; i++) { // Percorre o array
+        let criarLista = document.createElement('li'); // Cria um elemento <li>
+        criarLista.textContent = ListaDeAmigos[i]; // Define o nome dentro do <li>
+        listaHTML.appendChild(criarLista); // Adiciona o <li> na <ul>
+    }
+}
+```
 
