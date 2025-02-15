@@ -23,6 +23,10 @@ O **Jogo do Amigo Secreto** é uma aplicação web interativa que permite adicio
 |-- app.js           # Lógica do sorteio e interação
 |-- assets/          # Imagens e ícones utilizados
 ```
+## 💡 Entendendo o código 
+- Ao abrir o arquivo app.js, você encontrará não somente o código, mas também os **comentários** explicando **cada linha**, **função** e **ideia**.
+
+espero que aproveite e sirva de aprendizado 🥳
 
 ## 🌟 Tecnologias Utilizadas
 - **HTML**: Marcação estrutural da página.
