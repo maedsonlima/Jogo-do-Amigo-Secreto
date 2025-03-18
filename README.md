@@ -36,3 +36,8 @@ espero que aproveite e sirva de aprendizado 🥳
 ## 🌟 Autoria
 Projeto desenvolvido por **Maedson Lima, com apoio e orientação da Alura Academy & Oracle**. ✌️
 
+
+## 🕹️ Teste e Divirta-se 
+
+Acesse o link e veja o projeto na prática:
+https://jogo-do-amigo-secreto-git-main-maedsons-projects.vercel.app
